@@ -16,7 +16,11 @@ public class MedicineServiceImplement implements MedicineService {
 
 	@Override
 	public List<Medicine> listAllt() {
-		// TODO Auto-generated method stub
 		return repository.findAll();
+	}
+
+	@Override
+	public Medicine registerUpdateMedicine(Medicine obj) {
+		return repository.save(obj);
 	}
 }

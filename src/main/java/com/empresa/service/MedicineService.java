@@ -8,4 +8,6 @@ public interface MedicineService {
 
 	public abstract List<Medicine> listAllt();
 
+	public abstract Medicine registerUpdateMedicine(Medicine obj);
+
 }

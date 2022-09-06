@@ -34,4 +34,14 @@ public class StudentServiceImplement implements StudentService {
 	public Optional<Student> searchStudent(int id) {
 		return repository.findById(id);
 	}
+
+	@Override
+	public List<Student> listStudentByDni(String dni) {
+		return repository.listByDni(dni);
+	}
+
+	@Override
+	public List<Student> listStudentByEmail(String email) {
+		return repository.listByEmail(email);
+	}
 }
